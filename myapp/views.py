@@ -9,6 +9,7 @@ class Apple(APIView):
 
     def get(self, request):
         detail = {
-            "Fruits": "Apple"
+            "Fruits": "Apple",
+            "Animals": "Cats"
         }
         return Response(detail, status=status.HTTP_200_OK)
